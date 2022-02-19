@@ -7,7 +7,7 @@
                 "DBInstanceClass" : "db.t2.small", 
                 "AllocatedStorage" : "100", 
                 "MasterUsername" : "admin", 
-                "MasterUserPassword" : "muni1234", 
+                "MasterUserPassword" : "Naveen1999", 
                 "DBSnapshotIdentifier":"xxxxxxxx-2016-07-13-17-00" 
             }
         }
