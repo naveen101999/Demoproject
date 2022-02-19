@@ -1,0 +1,15 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Resources" : {
+        "DBInstance" : {
+            "Type": "AWS::RDS::DBInstance",
+            "Properties": {
+                "DBInstanceClass" : "db.t2.small", 
+                "AllocatedStorage" : "100", 
+                "MasterUsername" : "admin", 
+                "MasterUserPassword" : "muni1234", 
+                "DBSnapshotIdentifier":"xxxxxxxx-2016-07-13-17-00" 
+            }
+        }
+    }
+}
