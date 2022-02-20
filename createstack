@@ -4,7 +4,7 @@ pipeline{
        stage('hosting application'){
         steps{
           sh "ls"
-           sh "aws cloudformation create-stack --stack-name mystack4 --template-body file://awscli/stack.yml --region us-east-1" 
+           sh "aws cloudformation create-stack --stack-name mystack5 --template-body file://awscli/stack.yml --region us-east-1" 
         }
        }
       }
