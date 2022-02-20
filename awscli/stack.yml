@@ -70,7 +70,7 @@ Resources:
       MasterUserPassword: Naveen1999
       DBInstanceClass: db.t2.micro
       DBName: cmsdb
-      DBInstanceIdentifier: rds12
+      DBInstanceIdentifier: rds13
       VPCSecurityGroups:
         - sg-0b947349537e69ed2
       EngineVersion: 5.7
@@ -81,7 +81,7 @@ Resources:
   ELBV2LB1HUDC:
     Type: 'AWS::ElasticLoadBalancingV2::LoadBalancer'
     Properties:
-      Name: my-load-balancer-new3
+      Name: my-load-balancer-new4
       Subnets:
         - subnet-010656811f3381d92
         - subnet-026d1c34b85e10605
@@ -92,7 +92,7 @@ Resources:
   ELBV2TG4A6L0:
     Type: 'AWS::ElasticLoadBalancingV2::TargetGroup'
     Properties:
-      Name: my-target-group-new3
+      Name: my-target-group-new4
       Port: 80
       Protocol: HTTP
       VpcId: vpc-01ac3cdf74d6afae6
@@ -117,7 +117,7 @@ Resources:
   ASLC55LJA:
     Type: 'AWS::AutoScaling::LaunchConfiguration'
     Properties:
-      LaunchConfigurationName: my-lc-new3
+      LaunchConfigurationName: my-lc-new4
       ImageId: ami-04505e74c0741db8d
       InstanceType: t2.micro
       IamInstanceProfile: demo-Role
@@ -169,8 +169,8 @@ sudo mysql -h {end_point} -u admin --password=Naveen1999 clientmsdb < /Demoproje
   ASASG3CEB8:
     Type: 'AWS::AutoScaling::AutoScalingGroup'
     Properties:
-      AutoScalingGroupName: my-asg-new3
-      LaunchConfigurationName: my-lc-new3
+      AutoScalingGroupName: my-asg-new4
+      LaunchConfigurationName: my-lc-new4
       AvailabilityZones:
         - us-east-1d
         - us-east-1c
