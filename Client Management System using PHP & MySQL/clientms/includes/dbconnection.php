@@ -1,6 +1,6 @@
 <?php 
 // DB credentials.
-define('DB_HOST','rds14.citsfkgji6tl.us-east-1.rds.amazonaws.com:3306');
+define('DB_HOST','localhost');
 define('DB_USER','admin');
 define('DB_PASS','Naveen1999');
 define('DB_NAME','clientmsdb');
