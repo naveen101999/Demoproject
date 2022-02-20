@@ -124,7 +124,7 @@ Resources:
       KeyName: Naveen06training
       SecurityGroups:
         - sg-0b947349537e69ed2
-        UserData:
+      UserData:
         'Fn::Base64': !Sub 
             |
             #!/bin/bash
