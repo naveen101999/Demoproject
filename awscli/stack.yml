@@ -124,10 +124,7 @@ Resources:
       KeyName: Naveen06training
       SecurityGroups:
         - sg-0b947349537e69ed2
-      UserData:
-        'Fn::Base64': !Sub 
-            |
-            #!/bin/bash
+            user_Data = f'''#!/bin/bash
             sudo apt-get update -y
             sudo apt-get upgrade -y
 sudo wget https://www.apachefriends.org/xampp-files/8.1.2/xampp-linux-x64-8.1.2-0-installer.run
